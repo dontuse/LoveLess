@@ -1,0 +1,9 @@
+{
+    "name": "loveLess-build",
+    "description": "loveLess build script",
+    "version": "0.0.1",
+    "main": "./grunt.js",
+    "dependencies": {
+        "grunt-contrib-less" : "*"
+    }
+}
