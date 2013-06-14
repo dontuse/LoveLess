@@ -27,19 +27,25 @@ module.exports = function (grunt) {
                 }
             }
         },
+        jade: {
+            compile: {
+                options: {
+                    data: {
+                        debug: true
+                    },
+                    pretty : true
+                },
+                files: {
+                    "../publish/index.html": ["../pages/index.jade"]
+                }
+            }
+        },
         less: {
             dev: {
                 options: {
                 },
                 files: {
                     "../publish/style.css": "../blocks/love.less"
-                }
-            },
-            text: {
-                options: {
-                },
-                files: {
-                    "../publish/b-text-cms.css": "../blocks/love-text.less"
                 }
             },
             production: {
@@ -70,9 +76,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-jade');
 
     // main dev task
-    grunt.registerTask('default', ['concat' , 'less:dev']);
+    grunt.registerTask('default', [ 'jade', 'concat' , 'less:dev']);
 
     // production
     grunt.registerTask('prod', ['concat', 'uglify' , 'less:production']);
