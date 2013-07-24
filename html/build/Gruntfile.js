@@ -6,10 +6,7 @@ module.exports = function (grunt) {
 
         concat: {
             dist: {
-                src: [
-                    '../js/lib/jquery-1.7.2.js',
-                    '../js/lib/tiny-pubsub.js'
-                ],
+                src:  grunt.file.readJSON('js.js'),
                 dest: '../publish/script.js'
             }
         },
