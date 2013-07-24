@@ -3,14 +3,7 @@ module.exports = function (grunt) {
 
     // Project configuration.
     grunt.initConfig({
-        meta: {
-            version: '0.1.1',
-            skb: '/*! JAM-BOILERPLATE - v<%= meta.version %> - ' +
-                '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-                '* http://PROJECT_WEBSITE/\n' +
-                '* Copyright (c) <%= grunt.template.today("yyyy") %> ' +
-                'YOUR_NAME; Licensed MIT */'
-        },
+
         concat: {
             dist: {
                 src: [
@@ -24,19 +17,6 @@ module.exports = function (grunt) {
             my_target: {
                 files: {
                     '../publish/script.js': ['<%= concat.dist.dest %>']
-                }
-            }
-        },
-        jade: {
-            compile: {
-                options: {
-                    data: {
-                        debug: true
-                    },
-                    pretty : true
-                },
-                files: {
-                    "../publish/index.html": ["../pages/index.jade"]
                 }
             }
         },
@@ -79,7 +59,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-jade');
 
     // main dev task
-    grunt.registerTask('default', [ 'jade', 'concat' , 'less:dev']);
+    grunt.registerTask('default', [ 'concat' , 'less:dev']);
 
     // production
     grunt.registerTask('prod', ['concat', 'uglify' , 'less:production']);
