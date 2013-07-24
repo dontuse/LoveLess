@@ -47,6 +47,15 @@ module.exports = function (grunt) {
                 tasks: 'less:dev'
 
             }
+        },
+        imageEmbed: {
+            dist: {
+                src: ['../publish/style.css'],
+                dest: '../publish/style64.css',
+                options: {
+                    deleteAfterEncoding : false
+                }
+            }
         }
     });
 
@@ -62,7 +71,7 @@ module.exports = function (grunt) {
     grunt.registerTask('default', [ 'concat' , 'less:dev']);
 
     // production
-    grunt.registerTask('prod', ['concat', 'uglify' , 'less:production']);
+    grunt.registerTask('prod', ['concat', 'uglify' , 'less:production' , 'imageEmbed'] );
 
 
 
