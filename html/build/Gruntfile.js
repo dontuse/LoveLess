@@ -39,20 +39,27 @@ module.exports = function (grunt) {
                 files: '<%= concat.dist.src %>',
                 tasks: 'concat'
             },
+            conf: {
+                files: 'js.js',
+                tasks: 'concat'
+            },
             css: {
                 files: [
-                    '../blocks/**/*.less'
+                    '../blocks/**/*.less',
+                    '../blocks/*.less'
                 ],
-                tasks: ['concat','less:dev']
+                tasks: 'less:dev'
+
             }
         }
     });
 
 
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-concat');    // конкатит файлы
+    grunt.loadNpmTasks('grunt-contrib-less');     // компилит less / жмет
+    grunt.loadNpmTasks('grunt-contrib-uglify');  // жмет js
+    grunt.loadNpmTasks('grunt-contrib-watch');  // вотчер
+    grunt.loadNpmTasks("grunt-image-embed");   // конвертит картинке в base64
 
 
     // main dev task
@@ -62,6 +69,6 @@ module.exports = function (grunt) {
     grunt.registerTask('prod', ['concat', 'uglify' , 'less:production']);
 
 
-    grunt.registerTask('watcher', ['concat', ' less:dev']);
+
 
 };
