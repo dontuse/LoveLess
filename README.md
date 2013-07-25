@@ -15,15 +15,15 @@ LoveLess
 <div>
     <h3>Сборка</h3>
 
-    <p>dev</p>
+    <p><b>dev:</b></p>
     <p>
         grunt
     </p>
-    <p>prod</p>
+    <p><b>prod:</b></p>
     <p>
         grunt prod
     </p>
-    <p>watch</p>
+    <p><b>watch:</b></p>
     <p>
         grunt watch
     </p>
