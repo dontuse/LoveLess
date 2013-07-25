@@ -1,2 +1,2 @@
 Folder for storing temporary conten — such as images for news
-<h1>test</h1>
+<h3>Дирректория для картинок , файлов и прочего мусора</h3>
