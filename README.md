@@ -2,7 +2,7 @@ LoveLess
 ========
 
 <div>
-    <h3>Установка</h3>
+    <h3>Установка:</h3>
 
     <p>
         cd html/build
@@ -13,7 +13,7 @@ LoveLess
 </div>
 
 <div>
-    <h3>Сборка</h3>
+    <h3>Сборка:</h3>
 
     <p><b>dev:</b></p>
     <p>
