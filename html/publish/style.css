@@ -665,4 +665,29 @@ textarea {
   overflow: hidden;
   padding-bottom: 200px;
 }
-/*===| .b-content |======================end==========================================*//* дополнительные стили */
+/*===| .b-content |======================end==========================================*//*---| .b-dec-select |----------------------start----------------------------------------*/
+.b-dec-select {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  width: 150px;
+  border: 1px solid red;
+  background: #f0dddd;
+  -webkit-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+}
+.b-dec-select__c {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  width: 170px;
+}
+.b-dec-select__o {
+  font-size: 14px;
+}
+/*===| .b-dec-select |======================end==========================================*/
