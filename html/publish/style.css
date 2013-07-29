@@ -657,7 +657,6 @@ textarea {
 }
 /*===| .b-page |======================end==========================================*//*---| .b-header |----------------------start----------------------------------------*/
 .b-header {
-  background: red;
   height: 100px;
 }
 /*===| .b-header |======================end==========================================*//*---| .b-content |----------------------start----------------------------------------*/
@@ -665,7 +664,45 @@ textarea {
   overflow: hidden;
   padding-bottom: 200px;
 }
-/*===| .b-content |======================end==========================================*//*---| .b-dec-select |----------------------start----------------------------------------*/
+/*===| .b-content |======================end==========================================*//*---| .b-input |----------------------start----------------------------------------*/
+.b-input {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: top;
+  background: #ffffff;
+  border: 1px solid orange;
+  padding-left: 5px;
+  width: 300px;
+}
+.b-input:focus {
+  outline: #ff0000 2px;
+}
+/*===| .b-input |======================end==========================================*//*---| .b-logo |----------------------start----------------------------------------*/
+.b-logo {
+  width: 100px;
+  height: 150px;
+  display: block;
+  background: #550000;
+}
+/*===| .b-logo |======================end==========================================*//*---| .b-button |----------------------start----------------------------------------*/
+.b-button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  height: 22px;
+  line-height: 22px;
+  border: 1px solid #ff0000;
+  vertical-align: top;
+  width: 20px;
+  font-size: 11px;
+}
+/*===| .b-button |======================end==========================================*//*---| .b-dec-select |----------------------start----------------------------------------*/
 .b-dec-select {
   display: inline-block;
   vertical-align: top;
