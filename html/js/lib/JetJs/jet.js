@@ -1,6 +1,6 @@
 var JETJS = JETJS || {};
 
-JETJS.namespace = function () {
+JETJS.namespace = function (ns_string) {
     var parts = ns_string.split('.'),
         parent = JETJS,
         i;
