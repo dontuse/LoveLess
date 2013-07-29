@@ -604,6 +604,9 @@ textarea {
   margin: 0;
   padding-bottom: 1em;
 }
+.b-text__img {
+  max-width: 100%;
+}
 /*===| b-text |=================================================================*//*--------------------------*/
 /*---| .b-grid |----------------------start----------------------------------------*/
 .b-grid {
@@ -706,7 +709,7 @@ textarea {
 /*===| .b-input |======================end==========================================*//*---| .b-logo |----------------------start----------------------------------------*/
 .b-logo,
 .b-logo:visited {
-  width: 100px;
+  width: 300px;
   height: 50px;
   line-height: 50px;
   text-align: center;
@@ -734,7 +737,7 @@ textarea {
   vertical-align: top;
   overflow: hidden;
   width: 250px;
-  border: 1px solid red;
+  border: 1px solid orange;
   background: url("../blocks//b-dec-select/b-dec-select__arrow.png") no-repeat 234px center;
   -webkit-border-radius: 4px;
   -webkit-background-clip: padding-box;
@@ -779,6 +782,12 @@ textarea {
   background: #710909;
 }
 /*===| .b-table-menu |======================end==========================================*//*---| .b-pagination |----------------------start----------------------------------------*/
+.b-pagination__el {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  margin-right: 10px;
+}
 /*===| .b-pagination |======================end==========================================*//*---| .b-breadcrumbs |----------------------start----------------------------------------*/
 .b-breadcrumb__item {
   display: inline-block;
@@ -788,4 +797,22 @@ textarea {
   padding: 0 5px;
   color: #CCC;
 }
-/*===| .b-breadcrumbs |======================end==========================================*/
+/*===| .b-breadcrumbs |======================end==========================================*//*---| .b-textarea |----------------------start----------------------------------------*/
+.b-textarea {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border: 1px solid orange;
+  height: 100px;
+  width: 300px;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 13px;
+  color: #222222;
+}
+.b-textarea:focus {
+  background: gainsboro;
+  outline: 1px solid #ffd54e;
+}
+/*===| .b-textarea |======================end==========================================*/
