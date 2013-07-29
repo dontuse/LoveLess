@@ -781,6 +781,9 @@ textarea {
 .b-table-menu__a:hover {
   background: #710909;
 }
+.b-table-menu__a_state_active {
+  background: #710909;
+}
 /*===| .b-table-menu |======================end==========================================*//*---| .b-pagination |----------------------start----------------------------------------*/
 .b-pagination__el {
   display: inline-block;
@@ -815,4 +818,23 @@ textarea {
   background: gainsboro;
   outline: 1px solid #ffd54e;
 }
-/*===| .b-textarea |======================end==========================================*/
+/*===| .b-textarea |======================end==========================================*//*---| .b-carousel |----------------------start----------------------------------------*/
+.b-carousel {
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+}
+.b-carousel__inner {
+  background: none;
+  border: none;
+  width: 20000em;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.b-carousel__el {
+  float: left;
+  *display: inline;
+}
+/*===| .b-carousel |======================end==========================================*/
