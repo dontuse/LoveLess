@@ -639,6 +639,7 @@ textarea {
 /*===| .b-grid |======================end==========================================*//*---| .b-box |----------------------start----------------------------------------*/
 .b-box {
   *zoom: 1;
+  margin-bottom: 50px;
 }
 .b-box:before,
 .b-box:after {
@@ -653,7 +654,11 @@ textarea {
   float: left;
   *display: inline;
 }
-/*===| .b-box |======================end==========================================*//*---| .b-wrapper |----------------------start----------------------------------------*/
+/*===| .b-box |======================end==========================================*/
+.b-box_2 {
+  margin-bottom: 20px;
+}
+/*---| .b-wrapper |----------------------start----------------------------------------*/
 .b-wrapper {
   width: 900px;
   margin: 0 auto;
@@ -723,9 +728,9 @@ textarea {
   display: inline-block;
   vertical-align: top;
   overflow: hidden;
-  width: 150px;
+  width: 250px;
   border: 1px solid red;
-  background: #f0dddd;
+  background: url("../blocks//b-dec-select/b-dec-select__arrow.png") no-repeat 234px center;
   -webkit-border-radius: 4px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 4px;
@@ -738,7 +743,7 @@ textarea {
   padding: 0;
   background: none;
   border: none;
-  width: 170px;
+  width: 270px;
 }
 .b-dec-select__o {
   font-size: 14px;
