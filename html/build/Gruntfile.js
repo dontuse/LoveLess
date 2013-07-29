@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 
         concat: {
             dist: {
-                src:  grunt.file.readJSON('js.js'),
+                src:  grunt.file.readJSON('js.json'),
                 dest: '../publish/script.js'
             }
         },
