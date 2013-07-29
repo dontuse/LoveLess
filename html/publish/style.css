@@ -636,7 +636,24 @@ textarea {
   margin-right: -670px;
   left: 200px;
 }
-/*===| .b-grid |======================end==========================================*//*---| .b-wrapper |----------------------start----------------------------------------*/
+/*===| .b-grid |======================end==========================================*//*---| .b-box |----------------------start----------------------------------------*/
+.b-box {
+  *zoom: 1;
+}
+.b-box:before,
+.b-box:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.b-box:after {
+  clear: both;
+}
+.b-box__col {
+  float: left;
+  *display: inline;
+}
+/*===| .b-box |======================end==========================================*//*---| .b-wrapper |----------------------start----------------------------------------*/
 .b-wrapper {
   width: 900px;
   margin: 0 auto;
@@ -650,14 +667,13 @@ textarea {
 /*===| .b-footer |======================end==========================================*//*---| .b-page |----------------------start----------------------------------------*/
 .b-page {
   height: 100%;
-  background: darkgray;
 }
 .b-page__wrap {
   min-height: 100%;
 }
 /*===| .b-page |======================end==========================================*//*---| .b-header |----------------------start----------------------------------------*/
 .b-header {
-  height: 100px;
+  min-height: 100px;
 }
 /*===| .b-header |======================end==========================================*//*---| .b-content |----------------------start----------------------------------------*/
 .b-content {
@@ -727,4 +743,29 @@ textarea {
 .b-dec-select__o {
   font-size: 14px;
 }
-/*===| .b-dec-select |======================end==========================================*/
+/*===| .b-dec-select |======================end==========================================*//*---| .b-table-menu |----------------------start----------------------------------------*/
+.b-table-menu {
+  background: #222222;
+}
+.b-table-menu__table {
+  width: 100%;
+}
+.b-table-menu__td {
+  vertical-align: top;
+}
+.b-table-menu__a,
+.b-table-menu__a:visited {
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.b-table-menu__a:hover {
+  background: #710909;
+}
+/*===| .b-table-menu |======================end==========================================*/
