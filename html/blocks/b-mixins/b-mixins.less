@@ -7,8 +7,8 @@
   &:after {
     display: table;
     content: "";
-  // Fixes Opera/contenteditable bug:
-  // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
     line-height: 0;
   }
   &:after {
@@ -26,4 +26,19 @@
   padding: 0;
   background: none;
   border: none;
+}
+
+.placeholder(@color: @input-color-placeholder) {
+  &:-moz-placeholder {
+    color: @color;
+  }
+  &::-moz-placeholder {
+    color: @color;
+  }
+  &:-ms-input-placeholder {
+    color: @color;
+  }
+  &::-webkit-input-placeholder {
+    color: @color;
+  }
 }
